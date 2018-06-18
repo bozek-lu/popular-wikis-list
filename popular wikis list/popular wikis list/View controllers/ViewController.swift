@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         }
         wikisCollectionView.delegate = self
         wikisCollectionView.dataSource = viewModel
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +30,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    private func loadData() {
+//        indicatorView.startAnimating()
+        viewModel.loadData { [weak self] completion in
+//            self?.indicatorView.stopAnimating()
+            
+            switch completion {
+            case .success:
+                self?.wikisCollectionView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate {

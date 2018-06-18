@@ -22,8 +22,34 @@
 		8917218320D81AFA00513816 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8917217520D81AFA00513816 /* Rubik-Medium.ttf */; };
 		8917218420D81AFA00513816 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8917217520D81AFA00513816 /* Rubik-Medium.ttf */; };
 		8917218620D81DF400513816 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
-		8917218720D81DF400513816 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
-		8917218820D81DF400513816 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
+		89566E9B20D82A9A00F7604D /* WikiaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9A20D82A9A00F7604D /* WikiaItem.swift */; };
+		89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
+		89566E9E20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
+		89566E9F20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
+		89566EA120D82B7300F7604D /* WikiaItemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA020D82B7300F7604D /* WikiaItemStats.swift */; };
+		89566EA220D82B7300F7604D /* WikiaItemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA020D82B7300F7604D /* WikiaItemStats.swift */; };
+		89566EA320D82B7300F7604D /* WikiaItemStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA020D82B7300F7604D /* WikiaItemStats.swift */; };
+		89566EA520D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA420D82CFB00F7604D /* ApiServiceTopWikisList.swift */; };
+		89566EA620D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA420D82CFB00F7604D /* ApiServiceTopWikisList.swift */; };
+		89566EA720D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA420D82CFB00F7604D /* ApiServiceTopWikisList.swift */; };
+		89566EA920D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA820D82E0A00F7604D /* ApiResponseDecoder.swift */; };
+		89566EAA20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA820D82E0A00F7604D /* ApiResponseDecoder.swift */; };
+		89566EAB20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EA820D82E0A00F7604D /* ApiResponseDecoder.swift */; };
+		89566EAD20D82E7100F7604D /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EAC20D82E7100F7604D /* BaseApiService.swift */; };
+		89566EAE20D82E7100F7604D /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EAC20D82E7100F7604D /* BaseApiService.swift */; };
+		89566EAF20D82E7100F7604D /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EAC20D82E7100F7604D /* BaseApiService.swift */; };
+		89566EB120D82E8D00F7604D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB020D82E8D00F7604D /* ApiService.swift */; };
+		89566EB220D82E8D00F7604D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB020D82E8D00F7604D /* ApiService.swift */; };
+		89566EB320D82E8D00F7604D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB020D82E8D00F7604D /* ApiService.swift */; };
+		89566EB620D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
+		89566EB720D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
+		89566EB820D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
+		89566EBA20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
+		89566EBB20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
+		89566EBC20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
+		89566EBE20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
+		89566EBF20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
+		89566EC020D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
 		89DC74CC20D8245200BC6FEC /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
 		89DC74CE20D825D900BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
 		89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
@@ -65,6 +91,16 @@
 		8917217120D81AFA00513816 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		8917217520D81AFA00513816 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		8917218520D81DF400513816 /* WikiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiCell.swift; sourceTree = "<group>"; };
+		89566E9A20D82A9A00F7604D /* WikiaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiaItem.swift; sourceTree = "<group>"; };
+		89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWikisResponse.swift; sourceTree = "<group>"; };
+		89566EA020D82B7300F7604D /* WikiaItemStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiaItemStats.swift; sourceTree = "<group>"; };
+		89566EA420D82CFB00F7604D /* ApiServiceTopWikisList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTopWikisList.swift; sourceTree = "<group>"; };
+		89566EA820D82E0A00F7604D /* ApiResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseDecoder.swift; sourceTree = "<group>"; };
+		89566EAC20D82E7100F7604D /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		89566EB020D82E8D00F7604D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorsFactory.swift; sourceTree = "<group>"; };
+		89566EB920D8311000F7604D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		89566EBD20D8319100F7604D /* Environment .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment .swift"; sourceTree = "<group>"; };
 		89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				8917213F20D818E300513816 /* popular wikis list */,
-				8917217020D81AE700513816 /* Resources */,
 				8917215420D818E500513816 /* popular wikis listTests */,
 				8917215F20D818E500513816 /* popular wikis listUITests */,
 				8917213E20D818E300513816 /* Products */,
@@ -118,16 +153,10 @@
 		8917213F20D818E300513816 /* popular wikis list */ = {
 			isa = PBXGroup;
 			children = (
-				8917214020D818E300513816 /* AppDelegate.swift */,
-				8917214220D818E300513816 /* ViewController.swift */,
-				8917214420D818E300513816 /* Main.storyboard */,
-				8917214720D818E500513816 /* Assets.xcassets */,
-				8917214920D818E500513816 /* LaunchScreen.storyboard */,
-				8917214C20D818E500513816 /* Info.plist */,
-				8917216E20D8190600513816 /* WikiCell.xib */,
-				8917218520D81DF400513816 /* WikiCell.swift */,
-				89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */,
-				89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */,
+				89566E9620D829ED00F7604D /* Helpers */,
+				89566E9720D82A6C00F7604D /* API */,
+				89566E9320D829A200F7604D /* View controllers */,
+				89566E9520D829D200F7604D /* Supporting files */,
 			);
 			path = "popular wikis list";
 			sourceTree = "<group>";
@@ -157,6 +186,87 @@
 				8917217120D81AFA00513816 /* Rubik-Regular.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		89566E9320D829A200F7604D /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8917214420D818E300513816 /* Main.storyboard */,
+				89566E9420D829B900F7604D /* views */,
+				8917214220D818E300513816 /* ViewController.swift */,
+				89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		89566E9420D829B900F7604D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8917218520D81DF400513816 /* WikiCell.swift */,
+				8917216E20D8190600513816 /* WikiCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		89566E9520D829D200F7604D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				8917217020D81AE700513816 /* Resources */,
+				8917214720D818E500513816 /* Assets.xcassets */,
+				8917214C20D818E500513816 /* Info.plist */,
+				8917214020D818E300513816 /* AppDelegate.swift */,
+				8917214920D818E500513816 /* LaunchScreen.storyboard */,
+				89566EBD20D8319100F7604D /* Environment .swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		89566E9620D829ED00F7604D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */,
+				89566EB920D8311000F7604D /* UIImageViewExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		89566E9720D82A6C00F7604D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				89566EB420D82E9400F7604D /* Base */,
+				89566E9920D82A8400F7604D /* Models */,
+				89566E9820D82A7900F7604D /* Services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		89566E9820D82A7900F7604D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				89566EA420D82CFB00F7604D /* ApiServiceTopWikisList.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		89566E9920D82A8400F7604D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89566E9A20D82A9A00F7604D /* WikiaItem.swift */,
+				89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */,
+				89566EA020D82B7300F7604D /* WikiaItemStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89566EB420D82E9400F7604D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89566EB020D82E8D00F7604D /* ApiService.swift */,
+				89566EAC20D82E7100F7604D /* BaseApiService.swift */,
+				89566EA820D82E0A00F7604D /* ApiResponseDecoder.swift */,
+				89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89566EA920D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
+				89566EB620D82EC700F7604D /* ApiErrorsFactory.swift in Sources */,
+				89566EAD20D82E7100F7604D /* BaseApiService.swift in Sources */,
+				89566EB120D82E8D00F7604D /* ApiService.swift in Sources */,
 				8917218620D81DF400513816 /* WikiCell.swift in Sources */,
 				89DC74CE20D825D900BC6FEC /* UIViewExtensions.swift in Sources */,
+				89566EA120D82B7300F7604D /* WikiaItemStats.swift in Sources */,
+				89566E9B20D82A9A00F7604D /* WikiaItem.swift in Sources */,
+				89566EBA20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
+				89566EBE20D8319100F7604D /* Environment .swift in Sources */,
+				89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
+				89566EA520D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
 				8917214320D818E300513816 /* ViewController.swift in Sources */,
 				8917214120D818E300513816 /* AppDelegate.swift in Sources */,
 				89DC74CC20D8245200BC6FEC /* ViewControllerViewModel.swift in Sources */,
@@ -309,9 +429,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89566EBB20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
+				89566E9E20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
+				89566EB720D82EC700F7604D /* ApiErrorsFactory.swift in Sources */,
 				8917215620D818E500513816 /* popular_wikis_listTests.swift in Sources */,
+				89566EA220D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */,
-				8917218720D81DF400513816 /* WikiCell.swift in Sources */,
+				89566EAE20D82E7100F7604D /* BaseApiService.swift in Sources */,
+				89566EAA20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
+				89566EB220D82E8D00F7604D /* ApiService.swift in Sources */,
+				89566EA620D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
+				89566EBF20D8319100F7604D /* Environment .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +447,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89566EBC20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
+				89566E9F20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
+				89566EB820D82EC700F7604D /* ApiErrorsFactory.swift in Sources */,
 				8917216120D818E500513816 /* popular_wikis_listUITests.swift in Sources */,
+				89566EA320D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89DC74D020D8263800BC6FEC /* UIViewExtensions.swift in Sources */,
-				8917218820D81DF400513816 /* WikiCell.swift in Sources */,
+				89566EAF20D82E7100F7604D /* BaseApiService.swift in Sources */,
+				89566EAB20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
+				89566EB320D82E8D00F7604D /* ApiService.swift in Sources */,
+				89566EA720D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
+				89566EC020D8319100F7604D /* Environment .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HUL77PN4N;
-				INFOPLIST_FILE = "popular wikis list/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/popular wikis list/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +634,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HUL77PN4N;
-				INFOPLIST_FILE = "popular wikis list/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/popular wikis list/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

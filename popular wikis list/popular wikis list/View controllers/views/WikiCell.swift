@@ -23,4 +23,14 @@ class WikiCell: UICollectionViewCell {
         
         wikiImage.addShadow()
     }
+    
+    func fill(with dataSource: WikiaItem) {
+        title.text = dataSource.headline ?? dataSource.title
+        desc.text = dataSource.desc
+        
+        wikiImage.loadImage(from: dataSource.image) { [weak self] image in
+            self?.wikiImage.image = image
+//            self?.indicatorView.stopAnimating()
+        }
+    }
 }
