@@ -50,28 +50,47 @@ class WikiCell: UICollectionViewCell {
         wikiImage.kf.indicatorType = .activity
         wikiImage.kf.setImage(with: imgUrl)
         
-        let vidC = dataSource.stats.videos / 1000
-        if vidC >= 1 {
-            videosCount.text = "\(vidC)k"
+        updateVideosSegment(with: dataSource)
+        updateArticlesSegment(with: dataSource)
+        updatePostsSegment(with: dataSource)
+    }
+    
+    func updateVideosSegment(with dataSource: WikiaItem) {
+        let vidC = (Double(dataSource.stats.videos) / 1000).rounded()
+        if vidC > 1 {
+            videosCount.text = "\(Int(vidC))k"
+            videosWidth.constant = statsSegmentWidth
+        } else if dataSource.stats.videos > 0 {
+            videosCount.text = "\(dataSource.stats.videos)"
             videosWidth.constant = statsSegmentWidth
         } else {
             videosWidth.constant = 0
         }
-        
-        let artC = dataSource.stats.articles / 1000
-        if artC >= 1 {
-            articleCount.text = "\(artC)k"
-            articlesWidth.constant = statsSegmentWidth
-        } else {
-            articlesWidth.constant = 0
-        }
-        
-        let discC = dataSource.stats.pages / 1000
-        if discC >= 1 {
-            discussionsCount.text = "\(discC)k"
+    }
+    
+    func updatePostsSegment(with dataSource: WikiaItem) {
+        let discC = (Double(dataSource.stats.pages) / 1000).rounded()
+        if discC > 1 {
+            discussionsCount.text = "\(Int(discC))k"
+            discussionsWidth.constant = statsSegmentWidth
+        } else if dataSource.stats.pages > 0 {
+            discussionsCount.text = "\(dataSource.stats.pages)"
             discussionsWidth.constant = statsSegmentWidth
         } else {
             discussionsWidth.constant = 0
+        }
+    }
+    
+    func updateArticlesSegment(with dataSource: WikiaItem) {
+        let artC = (Double(dataSource.stats.articles) / 1000).rounded()
+        if artC >= 1 {
+            articleCount.text = "\(Int(artC))k"
+            articlesWidth.constant = statsSegmentWidth
+        } else if dataSource.stats.articles > 0 {
+            articleCount.text = "\(dataSource.stats.articles)"
+            articlesWidth.constant = statsSegmentWidth
+        } else {
+            articlesWidth.constant = 0
         }
     }
 }
