@@ -12,18 +12,9 @@ struct WikiaItem: Codable {
     var headline: String?
     var desc: String
     var stats: WikiaItemStats
-//    var original_dimensions: Dictionary<String, >?
     var url: String
     var image: String
-    var flags: [String]
     var domain: String
-    var wam_score: String
-    var id: Int
-    var lang: String
-    var topUsers: [Int]
-    var hub: String
-    var wordmark: String
-    var topic: String
     var title: String
 }
 

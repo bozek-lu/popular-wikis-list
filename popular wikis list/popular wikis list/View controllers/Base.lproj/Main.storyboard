@@ -32,7 +32,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="on7-C3-v9h" secondAttribute="bottom" id="9nL-Eu-IPN"/>
+                            <constraint firstAttribute="bottom" secondItem="on7-C3-v9h" secondAttribute="bottom" id="9nL-Eu-IPN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="on7-C3-v9h" secondAttribute="trailing" id="DmL-eV-xt6"/>
                             <constraint firstItem="on7-C3-v9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RY5-r5-LWD"/>
                             <constraint firstItem="on7-C3-v9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZA4-T5-eaY"/>
@@ -42,11 +42,39 @@
                     <navigationItem key="navigationItem" title="Top Wikis" id="Qz6-ec-Qo1"/>
                     <connections>
                         <outlet property="wikisCollectionView" destination="on7-C3-v9h" id="Vxg-50-gMn"/>
+                        <segue destination="smG-b1-vI4" kind="show" id="T7l-8O-Tqp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1180" y="132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Ms-Sl-Y6T">
+            <objects>
+                <viewController id="smG-b1-vI4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mRl-JM-QnU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKm-TQ-iZj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fKm-TQ-iZj" secondAttribute="bottom" id="1sV-kC-Az0"/>
+                            <constraint firstItem="fKm-TQ-iZj" firstAttribute="top" secondItem="8rl-7J-0IT" secondAttribute="top" id="eQu-qT-hoC"/>
+                            <constraint firstItem="fKm-TQ-iZj" firstAttribute="leading" secondItem="8rl-7J-0IT" secondAttribute="leading" id="hVg-jd-wO1"/>
+                            <constraint firstItem="8rl-7J-0IT" firstAttribute="trailing" secondItem="fKm-TQ-iZj" secondAttribute="trailing" id="leH-3J-ME7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8rl-7J-0IT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRi-Zt-L7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v0U-G0-YPw">

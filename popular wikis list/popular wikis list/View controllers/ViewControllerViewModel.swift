@@ -8,6 +8,7 @@
 
 import UIKit
 
+let apiItemsLimit = 25
 
 class ViewControllerViewModel: NSObject {
     enum Completion {
@@ -15,33 +16,31 @@ class ViewControllerViewModel: NSObject {
         case failure(Error)
     }
     
-    let apiItemsLimit = 25
-    var currentBatch = 0
+    var currentBatch = 1
+    var totalItems = 0
     
     lazy var serviceBuilder: (Int, Int) -> ApiService = { limit, batch in
         return ApiServiceTopWikisList(limit: limit, batch: batch)
     }
     
-    
-    private var service: ApiService?
-    private var wikisList: [WikiaItem]?
+    var service: ApiService?
+    var wikisList: [WikiaItem]?
     
     func loadData(with completion: @escaping (Completion) -> Void) {
         service = serviceBuilder(apiItemsLimit, currentBatch)
         service?.success = { [weak self] data in
             if let wikisResponse = data as? TopWikisResponse {
-                self?.wikisList = wikisResponse.items
+                self?.totalItems = wikisResponse.total
+                self?.wikisList = (self?.wikisList ?? []) + wikisResponse.items
                 completion(.success)
             } else {
                 let error = ApiErrorsFactory.makeError(for: .invalidDecodedData)
                 completion(.failure(error))
             }
-            self?.currentBatch += 1
         }
         
         service?.failure = { error in
             completion(.failure(error))
-            self.currentBatch += 1
         }
         
         service?.start()
@@ -54,11 +53,20 @@ extension ViewControllerViewModel: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WikiCell", for: indexPath) as! WikiCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WikiCell.reuseStandardIdentifier, for: indexPath) as! WikiCell
         if let wikisList = self.wikisList {
             let data = wikisList[indexPath.row]
             cell.fill(with: data)
         }
+        
         return cell
     }
 }
+
+//extension ViewController: UICollectionViewDataSourcePrefetching {
+//    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+//
+//
+//        ImagePrefetcher(urls: urls).start()
+//    }
+//}

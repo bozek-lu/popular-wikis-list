@@ -9,14 +9,9 @@
 import Foundation
 
 struct WikiaItemStats: Codable {
-    var users: Int
     var articles: Int
     var pages: Int
-    var admins: Int
-    var activeUsers: Int
-    var edits: Int
     var videos: Int
-    var images: Int
 }
 
 //{

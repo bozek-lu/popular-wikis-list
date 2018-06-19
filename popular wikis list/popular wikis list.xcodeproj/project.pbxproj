@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0144B7AA1300C96C4327C374 /* Pods_popular_wikis_list.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39C0BFE6E94AA60F4053172 /* Pods_popular_wikis_list.framework */; };
+		1A00F3DD49ED264CF8E0E64F /* Pods_popular_wikis_listTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8AB8B956E380FB6B761451 /* Pods_popular_wikis_listTests.framework */; };
 		8917214120D818E300513816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917214020D818E300513816 /* AppDelegate.swift */; };
 		8917214320D818E300513816 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917214220D818E300513816 /* ViewController.swift */; };
 		8917214620D818E300513816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8917214420D818E300513816 /* Main.storyboard */; };
@@ -22,6 +24,15 @@
 		8917218320D81AFA00513816 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8917217520D81AFA00513816 /* Rubik-Medium.ttf */; };
 		8917218420D81AFA00513816 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8917217520D81AFA00513816 /* Rubik-Medium.ttf */; };
 		8917218620D81DF400513816 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
+		893A19EB20D904B100C8E472 /* WikiaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9A20D82A9A00F7604D /* WikiaItem.swift */; };
+		893A19EC20D904B100C8E472 /* WikiaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9A20D82A9A00F7604D /* WikiaItem.swift */; };
+		893A19ED20D904BA00C8E472 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
+		893A19EE20D904BB00C8E472 /* WikiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917218520D81DF400513816 /* WikiCell.swift */; };
+		893A19EF20D904BF00C8E472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917214220D818E300513816 /* ViewController.swift */; };
+		893A19F020D904BF00C8E472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917214220D818E300513816 /* ViewController.swift */; };
+		893A19F120D904C200C8E472 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
+		893A19F220D904C200C8E472 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
+		894AF74420D8F911002E6BB5 /* ApiServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF74320D8F911002E6BB5 /* ApiServiceStub.swift */; };
 		89566E9B20D82A9A00F7604D /* WikiaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9A20D82A9A00F7604D /* WikiaItem.swift */; };
 		89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
 		89566E9E20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
@@ -44,9 +55,6 @@
 		89566EB620D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
 		89566EB720D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
 		89566EB820D82EC700F7604D /* ApiErrorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */; };
-		89566EBA20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
-		89566EBB20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
-		89566EBC20D8311000F7604D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EB920D8311000F7604D /* UIImageViewExtension.swift */; };
 		89566EBE20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
 		89566EBF20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
 		89566EC020D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
@@ -54,6 +62,7 @@
 		89DC74CE20D825D900BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
 		89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
 		89DC74D020D8263800BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
+		C1FEE3EB51B5E25FB3A2FF20 /* Pods_popular_wikis_listUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785DD7E98527305F2DD601A7 /* Pods_popular_wikis_listUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +83,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFEC8F4AFCCE092CB65B510 /* Pods-popular wikis list.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis list.debug.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list.debug.xcconfig"; sourceTree = "<group>"; };
+		1C68441FD09FC035D1D844A0 /* Pods-popular wikis listUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis listUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis listUITests/Pods-popular wikis listUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		785DD7E98527305F2DD601A7 /* Pods_popular_wikis_listUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popular_wikis_listUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8917213D20D818E300513816 /* popular wikis list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "popular wikis list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8917214020D818E300513816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8917214220D818E300513816 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +103,7 @@
 		8917217120D81AFA00513816 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		8917217520D81AFA00513816 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		8917218520D81DF400513816 /* WikiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiCell.swift; sourceTree = "<group>"; };
+		894AF74320D8F911002E6BB5 /* ApiServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceStub.swift; sourceTree = "<group>"; };
 		89566E9A20D82A9A00F7604D /* WikiaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiaItem.swift; sourceTree = "<group>"; };
 		89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWikisResponse.swift; sourceTree = "<group>"; };
 		89566EA020D82B7300F7604D /* WikiaItemStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiaItemStats.swift; sourceTree = "<group>"; };
@@ -99,10 +112,15 @@
 		89566EAC20D82E7100F7604D /* BaseApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
 		89566EB020D82E8D00F7604D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorsFactory.swift; sourceTree = "<group>"; };
-		89566EB920D8311000F7604D /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		89566EBD20D8319100F7604D /* Environment .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment .swift"; sourceTree = "<group>"; };
 		89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		972BE11F1317757FB3DC9958 /* Pods-popular wikis list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis list.release.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list.release.xcconfig"; sourceTree = "<group>"; };
+		97B4BA894A3C1468FC7AC4F7 /* Pods-popular wikis listTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis listTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis listTests/Pods-popular wikis listTests.release.xcconfig"; sourceTree = "<group>"; };
+		A58335F81D8C21FBAEA1FF20 /* Pods-popular wikis listUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis listUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis listUITests/Pods-popular wikis listUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB1129F11D7DD8B765DE65B2 /* Pods-popular wikis listTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis listTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis listTests/Pods-popular wikis listTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C39C0BFE6E94AA60F4053172 /* Pods_popular_wikis_list.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popular_wikis_list.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF8AB8B956E380FB6B761451 /* Pods_popular_wikis_listTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_popular_wikis_listTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0144B7AA1300C96C4327C374 /* Pods_popular_wikis_list.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A00F3DD49ED264CF8E0E64F /* Pods_popular_wikis_listTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,12 +144,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FEE3EB51B5E25FB3A2FF20 /* Pods_popular_wikis_listUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30177F3E321C46A4F2095F1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AFEC8F4AFCCE092CB65B510 /* Pods-popular wikis list.debug.xcconfig */,
+				972BE11F1317757FB3DC9958 /* Pods-popular wikis list.release.xcconfig */,
+				AB1129F11D7DD8B765DE65B2 /* Pods-popular wikis listTests.debug.xcconfig */,
+				97B4BA894A3C1468FC7AC4F7 /* Pods-popular wikis listTests.release.xcconfig */,
+				1C68441FD09FC035D1D844A0 /* Pods-popular wikis listUITests.debug.xcconfig */,
+				A58335F81D8C21FBAEA1FF20 /* Pods-popular wikis listUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8917213420D818E300513816 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +171,8 @@
 				8917215420D818E500513816 /* popular wikis listTests */,
 				8917215F20D818E500513816 /* popular wikis listUITests */,
 				8917213E20D818E300513816 /* Products */,
+				30177F3E321C46A4F2095F1F /* Pods */,
+				9DFA1B33283CC02171054B8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +202,7 @@
 			children = (
 				8917215520D818E500513816 /* popular_wikis_listTests.swift */,
 				8917215720D818E500513816 /* Info.plist */,
+				894AF74320D8F911002E6BB5 /* ApiServiceStub.swift */,
 			);
 			path = "popular wikis listTests";
 			sourceTree = "<group>";
@@ -225,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */,
-				89566EB920D8311000F7604D /* UIImageViewExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -269,6 +305,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		9DFA1B33283CC02171054B8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39C0BFE6E94AA60F4053172 /* Pods_popular_wikis_list.framework */,
+				CF8AB8B956E380FB6B761451 /* Pods_popular_wikis_listTests.framework */,
+				785DD7E98527305F2DD601A7 /* Pods_popular_wikis_listUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +322,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8917216520D818E500513816 /* Build configuration list for PBXNativeTarget "popular wikis list" */;
 			buildPhases = (
+				652A22D35CDB223E46EFD5BF /* [CP] Check Pods Manifest.lock */,
 				8917213920D818E300513816 /* Sources */,
 				8917213A20D818E300513816 /* Frameworks */,
 				8917213B20D818E300513816 /* Resources */,
+				93BCF36A5780D2575FEB8B52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +341,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8917216820D818E500513816 /* Build configuration list for PBXNativeTarget "popular wikis listTests" */;
 			buildPhases = (
+				D5CEF5895B61D03E484C189A /* [CP] Check Pods Manifest.lock */,
 				8917214D20D818E500513816 /* Sources */,
 				8917214E20D818E500513816 /* Frameworks */,
 				8917214F20D818E500513816 /* Resources */,
@@ -311,6 +360,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8917216B20D818E500513816 /* Build configuration list for PBXNativeTarget "popular wikis listUITests" */;
 			buildPhases = (
+				7DD397F521A086C3BC48A847 /* [CP] Check Pods Manifest.lock */,
 				8917215820D818E500513816 /* Sources */,
 				8917215920D818E500513816 /* Frameworks */,
 				8917215A20D818E500513816 /* Resources */,
@@ -402,6 +452,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		652A22D35CDB223E46EFD5BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-popular wikis list-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD397F521A086C3BC48A847 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-popular wikis listUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BCF36A5780D2575FEB8B52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5CEF5895B61D03E484C189A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-popular wikis listTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8917213920D818E300513816 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -415,7 +540,6 @@
 				89DC74CE20D825D900BC6FEC /* UIViewExtensions.swift in Sources */,
 				89566EA120D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89566E9B20D82A9A00F7604D /* WikiaItem.swift in Sources */,
-				89566EBA20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
 				89566EBE20D8319100F7604D /* Environment .swift in Sources */,
 				89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
 				89566EA520D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
@@ -429,14 +553,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89566EBB20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
 				89566E9E20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
 				89566EB720D82EC700F7604D /* ApiErrorsFactory.swift in Sources */,
+				893A19EB20D904B100C8E472 /* WikiaItem.swift in Sources */,
 				8917215620D818E500513816 /* popular_wikis_listTests.swift in Sources */,
+				893A19EF20D904BF00C8E472 /* ViewController.swift in Sources */,
 				89566EA220D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */,
+				893A19F120D904C200C8E472 /* ViewControllerViewModel.swift in Sources */,
 				89566EAE20D82E7100F7604D /* BaseApiService.swift in Sources */,
 				89566EAA20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
+				893A19ED20D904BA00C8E472 /* WikiCell.swift in Sources */,
+				894AF74420D8F911002E6BB5 /* ApiServiceStub.swift in Sources */,
 				89566EB220D82E8D00F7604D /* ApiService.swift in Sources */,
 				89566EA620D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
 				89566EBF20D8319100F7604D /* Environment .swift in Sources */,
@@ -447,15 +575,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89566EBC20D8311000F7604D /* UIImageViewExtension.swift in Sources */,
 				89566E9F20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
 				89566EB820D82EC700F7604D /* ApiErrorsFactory.swift in Sources */,
 				8917216120D818E500513816 /* popular_wikis_listUITests.swift in Sources */,
 				89566EA320D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89DC74D020D8263800BC6FEC /* UIViewExtensions.swift in Sources */,
+				893A19F220D904C200C8E472 /* ViewControllerViewModel.swift in Sources */,
+				893A19EC20D904B100C8E472 /* WikiaItem.swift in Sources */,
 				89566EAF20D82E7100F7604D /* BaseApiService.swift in Sources */,
 				89566EAB20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
+				893A19F020D904BF00C8E472 /* ViewController.swift in Sources */,
 				89566EB320D82E8D00F7604D /* ApiService.swift in Sources */,
+				893A19EE20D904BB00C8E472 /* WikiCell.swift in Sources */,
 				89566EA720D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
 				89566EC020D8319100F7604D /* Environment .swift in Sources */,
 			);
@@ -612,11 +743,13 @@
 		};
 		8917216620D818E500513816 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFEC8F4AFCCE092CB65B510 /* Pods-popular wikis list.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HUL77PN4N;
 				INFOPLIST_FILE = "$(SRCROOT)/popular wikis list/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,11 +763,13 @@
 		};
 		8917216720D818E500513816 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 972BE11F1317757FB3DC9958 /* Pods-popular wikis list.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HUL77PN4N;
 				INFOPLIST_FILE = "$(SRCROOT)/popular wikis list/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,6 +783,7 @@
 		};
 		8917216920D818E500513816 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB1129F11D7DD8B765DE65B2 /* Pods-popular wikis listTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -669,6 +805,7 @@
 		};
 		8917216A20D818E500513816 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B4BA894A3C1468FC7AC4F7 /* Pods-popular wikis listTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -690,6 +827,7 @@
 		};
 		8917216C20D818E500513816 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C68441FD09FC035D1D844A0 /* Pods-popular wikis listUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -710,6 +848,7 @@
 		};
 		8917216D20D818E500513816 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58335F81D8C21FBAEA1FF20 /* Pods-popular wikis listUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
