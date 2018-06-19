@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var wikisCollectionView: UICollectionView!
     var refresher:UIRefreshControl!
     
+    private var selectedWiki: WikiaItem?
+    
     private lazy var viewModel = ViewControllerViewModel()
     
     override func viewDidLoad() {
@@ -58,6 +60,15 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? WikiContentViewController {
+            if let url = URL(string: selectedWiki?.url ?? "") {
+                dest.wikiUrl = url
+                dest.title = selectedWiki?.headline
+            }
+        }
+    }
 }
 
 extension ViewController: UICollectionViewDelegate {
@@ -66,6 +77,8 @@ extension ViewController: UICollectionViewDelegate {
             return
         }
         print(wiki.url)
+        selectedWiki = wiki
+        performSegue(withIdentifier: "showWikiContent", sender: nil)
     }
 }
 

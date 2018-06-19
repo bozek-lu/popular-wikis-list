@@ -32,6 +32,9 @@
 		893A19F020D904BF00C8E472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917214220D818E300513816 /* ViewController.swift */; };
 		893A19F120D904C200C8E472 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
 		893A19F220D904C200C8E472 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
+		893B887E20D943940077E6DE /* WikiContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B887D20D943940077E6DE /* WikiContentViewController.swift */; };
+		893B887F20D9444A0077E6DE /* WikiContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B887D20D943940077E6DE /* WikiContentViewController.swift */; };
+		893B888020D9444B0077E6DE /* WikiContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893B887D20D943940077E6DE /* WikiContentViewController.swift */; };
 		894AF74420D8F911002E6BB5 /* ApiServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894AF74320D8F911002E6BB5 /* ApiServiceStub.swift */; };
 		89566E9B20D82A9A00F7604D /* WikiaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9A20D82A9A00F7604D /* WikiaItem.swift */; };
 		89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */; };
@@ -103,6 +106,7 @@
 		8917217120D81AFA00513816 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		8917217520D81AFA00513816 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		8917218520D81DF400513816 /* WikiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiCell.swift; sourceTree = "<group>"; };
+		893B887D20D943940077E6DE /* WikiContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiContentViewController.swift; sourceTree = "<group>"; };
 		894AF74320D8F911002E6BB5 /* ApiServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceStub.swift; sourceTree = "<group>"; };
 		89566E9A20D82A9A00F7604D /* WikiaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiaItem.swift; sourceTree = "<group>"; };
 		89566E9C20D82ACB00F7604D /* TopWikisResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWikisResponse.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				89566E9420D829B900F7604D /* views */,
 				8917214220D818E300513816 /* ViewController.swift */,
 				89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */,
+				893B887D20D943940077E6DE /* WikiContentViewController.swift */,
 			);
 			path = "View controllers";
 			sourceTree = "<group>";
@@ -546,6 +551,7 @@
 				8917214320D818E300513816 /* ViewController.swift in Sources */,
 				8917214120D818E300513816 /* AppDelegate.swift in Sources */,
 				89DC74CC20D8245200BC6FEC /* ViewControllerViewModel.swift in Sources */,
+				893B887E20D943940077E6DE /* WikiContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +567,7 @@
 				89566EA220D82B7300F7604D /* WikiaItemStats.swift in Sources */,
 				89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */,
 				893A19F120D904C200C8E472 /* ViewControllerViewModel.swift in Sources */,
+				893B887F20D9444A0077E6DE /* WikiContentViewController.swift in Sources */,
 				89566EAE20D82E7100F7604D /* BaseApiService.swift in Sources */,
 				89566EAA20D82E0A00F7604D /* ApiResponseDecoder.swift in Sources */,
 				893A19ED20D904BA00C8E472 /* WikiCell.swift in Sources */,
@@ -589,6 +596,7 @@
 				893A19EE20D904BB00C8E472 /* WikiCell.swift in Sources */,
 				89566EA720D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
 				89566EC020D8319100F7604D /* Environment .swift in Sources */,
+				893B888020D9444B0077E6DE /* WikiContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
