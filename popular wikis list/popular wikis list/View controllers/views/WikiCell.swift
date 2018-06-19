@@ -31,7 +31,11 @@ class WikiCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
-        let screenWidth = UIScreen.main.bounds.size.width
+        var screenWidth: CGFloat = UIScreen.main.bounds.size.width
+        if UIScreen.main.bounds.size.width > UIScreen.main.bounds.size.height {
+            screenWidth = UIScreen.main.bounds.size.width / 2
+        }
+        //
         widthConstraint.constant = screenWidth - (2 * 40)
         
         wikiImage.addShadow()

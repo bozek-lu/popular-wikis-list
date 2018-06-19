@@ -69,6 +69,15 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard let flowLayout = wikisCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
+        wikisCollectionView.reloadData()
+    }
 }
 
 extension ViewController: UICollectionViewDelegate {
