@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     private func setupCollectionView() {
         wikisCollectionView.register(UINib(nibName: WikiCell.reuseStandardIdentifier, bundle: nil), forCellWithReuseIdentifier: WikiCell.reuseStandardIdentifier)
         if let flowLayout = wikisCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 1,height: 1)
+            flowLayout.estimatedItemSize = CGSize(width: 300,height: 300)
         }
         wikisCollectionView.delegate = self
         wikisCollectionView.dataSource = viewModel
@@ -72,6 +72,16 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let wikisList = viewModel.wikisList else {
+            return
+        }
+        if wikisList.count < viewModel.totalItems && indexPath.row >= wikisList.count - 1 {
+            viewModel.currentBatch += 1
+            loadData()
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let wiki = viewModel.wikisList?[indexPath.row] else {
             return
