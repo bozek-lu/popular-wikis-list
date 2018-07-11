@@ -10,12 +10,12 @@ import Foundation
 
 struct WikiaItem: Codable {
     var headline: String?
-    var desc: String
-    var stats: WikiaItemStats
-    var url: String
-    var image: String
-    var domain: String
-    var title: String
+    let desc: String
+    let stats: WikiaItemStats
+    let url: String
+    let image: String
+    let domain: String
+    let title: String
 }
 
 //{

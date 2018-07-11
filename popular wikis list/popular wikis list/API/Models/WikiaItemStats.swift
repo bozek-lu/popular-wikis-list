@@ -9,9 +9,9 @@
 import Foundation
 
 struct WikiaItemStats: Codable {
-    var articles: Int
-    var pages: Int
-    var videos: Int
+    let articles: Int
+    let pages: Int
+    let videos: Int
 }
 
 //{

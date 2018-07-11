@@ -9,11 +9,11 @@
 import Foundation
 
 struct TopWikisResponse: Codable {
-    var batches: Int
-    var items: [WikiaItem]
-    var total: Int
-    var currentBatch: Int
-    var next: Int
+    let batches: Int
+    let items: [WikiaItem]
+    let total: Int
+    let currentBatch: Int
+    let next: Int
 }
 
 //{
