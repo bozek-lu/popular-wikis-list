@@ -53,7 +53,7 @@ extension ViewControllerViewModel: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WikiCell.reuseStandardIdentifier, for: indexPath) as! WikiCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WikiSnapCell.reuseStandardIdentifier, for: indexPath) as! WikiSnapCell
         if let wikisList = self.wikisList {
             let data = wikisList[indexPath.row]
             cell.fill(with: data)

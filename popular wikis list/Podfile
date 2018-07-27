@@ -7,6 +7,7 @@ target 'popular wikis list' do
 
   # Pods for popular wikis list
   pod 'Kingfisher'
+  pod 'SnapKit'
   
   target 'popular wikis listTests' do
     inherit! :search_paths

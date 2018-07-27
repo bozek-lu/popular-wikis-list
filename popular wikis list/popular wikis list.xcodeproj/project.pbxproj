@@ -61,6 +61,8 @@
 		89566EBE20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
 		89566EBF20D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
 		89566EC020D8319100F7604D /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = 89566EBD20D8319100F7604D /* Environment .swift */; };
+		895BCB7E2106418700EB9A69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BCB7D2106418700EB9A69 /* UIColorExtension.swift */; };
+		895BCB802106474600EB9A69 /* WikiSnapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BCB7F2106474600EB9A69 /* WikiSnapCell.swift */; };
 		89DC74CC20D8245200BC6FEC /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */; };
 		89DC74CE20D825D900BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
 		89DC74CF20D8263700BC6FEC /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */; };
@@ -117,6 +119,8 @@
 		89566EB020D82E8D00F7604D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		89566EB520D82EC700F7604D /* ApiErrorsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorsFactory.swift; sourceTree = "<group>"; };
 		89566EBD20D8319100F7604D /* Environment .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment .swift"; sourceTree = "<group>"; };
+		895BCB7D2106418700EB9A69 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		895BCB7F2106474600EB9A69 /* WikiSnapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiSnapCell.swift; sourceTree = "<group>"; };
 		89DC74CB20D8245200BC6FEC /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		972BE11F1317757FB3DC9958 /* Pods-popular wikis list.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-popular wikis list.release.xcconfig"; path = "Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 			children = (
 				8917218520D81DF400513816 /* WikiCell.swift */,
 				8917216E20D8190600513816 /* WikiCell.xib */,
+				895BCB7F2106474600EB9A69 /* WikiSnapCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				89DC74CD20D825D900BC6FEC /* UIViewExtensions.swift */,
+				895BCB7D2106418700EB9A69 /* UIColorExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -502,10 +508,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-popular wikis list/Pods-popular wikis list-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -548,10 +556,12 @@
 				89566EBE20D8319100F7604D /* Environment .swift in Sources */,
 				89566E9D20D82ACB00F7604D /* TopWikisResponse.swift in Sources */,
 				89566EA520D82CFB00F7604D /* ApiServiceTopWikisList.swift in Sources */,
+				895BCB7E2106418700EB9A69 /* UIColorExtension.swift in Sources */,
 				8917214320D818E300513816 /* ViewController.swift in Sources */,
 				8917214120D818E300513816 /* AppDelegate.swift in Sources */,
 				89DC74CC20D8245200BC6FEC /* ViewControllerViewModel.swift in Sources */,
 				893B887E20D943940077E6DE /* WikiContentViewController.swift in Sources */,
+				895BCB802106474600EB9A69 /* WikiSnapCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

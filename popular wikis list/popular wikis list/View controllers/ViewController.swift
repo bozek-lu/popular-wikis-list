@@ -7,9 +7,24 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var wikisCollectionView: UICollectionView!
+//    @IBOutlet weak var wikisCollectionView: UICollectionView!
+    var collectionView: UICollectionView = {
+        
+        let frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        let layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        layout.scrollDirection = .vertical
+        
+        let result = UICollectionView(frame: frame, collectionViewLayout: layout)
+        result.backgroundColor = UIColor.collectionBgr
+        result.translatesAutoresizingMaskIntoConstraints = false
+        
+        return result
+        
+    }()
     var refresher:UIRefreshControl!
     
     private var selectedWiki: WikiaItem?
@@ -30,17 +45,23 @@ class ViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        wikisCollectionView.register(UINib(nibName: WikiCell.reuseStandardIdentifier, bundle: nil), forCellWithReuseIdentifier: WikiCell.reuseStandardIdentifier)
-        if let flowLayout = wikisCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            flowLayout.estimatedItemSize = CGSize(width: 300,height: 300)
+//        let layout = UICollectionViewFlowLayout()
+//        let w = self.view.frame.width - 20
+//        layout.estimatedItemSize = CGSize(width: 300, height: 150)
+        self.view.addSubview(collectionView)
+        collectionView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view)
         }
-        wikisCollectionView.delegate = self
-        wikisCollectionView.dataSource = viewModel
+        collectionView.register(WikiSnapCell.self, forCellWithReuseIdentifier: WikiSnapCell.reuseStandardIdentifier)
+//        collectionView.register(UINib(nibName: WikiCell.reuseStandardIdentifier, bundle: nil), forCellWithReuseIdentifier: WikiCell.reuseStandardIdentifier)
+        collectionView.delegate = self
+        collectionView.dataSource = viewModel
         
         refresher = UIRefreshControl()
-        wikisCollectionView!.alwaysBounceVertical = true
+        collectionView.alwaysBounceVertical = true
         refresher.addTarget(self, action: #selector(refresh), for: .valueChanged)
-        wikisCollectionView!.addSubview(refresher)
+        collectionView.addSubview(refresher)
+        
     }
     
     @objc private func refresh() {
@@ -54,7 +75,7 @@ class ViewController: UIViewController {
             self?.refresher.endRefreshing()
             switch completion {
             case .success:
-                self?.wikisCollectionView.reloadData()
+                self?.collectionView.reloadData()
             case .failure(let error):
                 print(error)
             }
@@ -72,15 +93,16 @@ class ViewController: UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        guard let flowLayout = wikisCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+        guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
         }
         flowLayout.invalidateLayout()
-        wikisCollectionView.reloadData()
+        collectionView.reloadData()
     }
 }
 
 extension ViewController: UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let wikisList = viewModel.wikisList else {
             return
@@ -100,6 +122,3 @@ extension ViewController: UICollectionViewDelegate {
         performSegue(withIdentifier: "showWikiContent", sender: nil)
     }
 }
-
-
-

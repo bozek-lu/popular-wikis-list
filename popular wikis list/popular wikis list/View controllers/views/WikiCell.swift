@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SnapKit
 
 class WikiCell: UICollectionViewCell {
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
@@ -39,6 +40,15 @@ class WikiCell: UICollectionViewCell {
         widthConstraint.constant = screenWidth - (2 * 40)
         
         wikiImage.addShadow()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func prepareForReuse() {
@@ -97,4 +107,6 @@ class WikiCell: UICollectionViewCell {
             articlesWidth.constant = 0
         }
     }
+    
+    
 }
